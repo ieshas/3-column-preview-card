@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+/* CARDS */
+
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+article {
+  width: 100%;
+  max-width: 327px;
+  padding: 5rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+#sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+#suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+#suvs,
+#luxury {
+  margin-top: -2rem;
+}
+
+/* TEXT */
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  margin: 3rem auto;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2.5rem;
+}
+
+p,
+button {
+  font-size: 1.5rem;
+}
+
+/* BUTTONS */
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 3rem;
+  border: none;
+  height: 48px;
+  width: 146px;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+#sedans button:hover,
+#suvs button:hover,
+#luxury button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+#sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+#sedans button:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+#suvs button {
+  color: hsl(184, 100%, 22%);
+}
+
+#suvs button:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+#luxury button:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+@media (min-width: 850px) {
+
+  #cards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+  }
+
+  article {
+    width: 300px;
+    height: 500px;
+  }
+
+  p {
+    width: 210px;
+    margin-bottom: 5rem;
+  }
+
+  #suvs,
+  #luxury {
+    margin-top: 0;
+    margin-left: -2rem;
+  }
+}
+
+@media (min-width: 1040px) {
+  article {
+    width: 500px;
+  }
+}
